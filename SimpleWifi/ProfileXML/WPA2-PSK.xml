@@ -4,6 +4,7 @@
 	<SSIDConfig>
 		<SSID>
 			<name>{0}</name>
+			<hex>{2}</hex>
 		</SSID>
 	</SSIDConfig>
 	<connectionType>ESS</connectionType>
@@ -28,4 +29,5 @@
 <!--
 	0 = Name
 	1 = Key
+	2 = HEX Key
 -->
