@@ -42,7 +42,7 @@ namespace SimpleWifi
 					else // PSK
 					{
 						template = GetTemplate("WPA2-PSK");
-						profile = string.Format(template, name, password, hex);
+						profile = string.Format(template, name, hex, password);
 					}
 					break;
 				case Dot11CipherAlgorithm.TKIP:
@@ -55,7 +55,7 @@ namespace SimpleWifi
 					else // PSK
 					{
 						template = GetTemplate("WPA-PSK");
-						profile = string.Format(template, name, password, hex);
+						profile = string.Format(template, name, hex, password);
 					}
 
 					break;			

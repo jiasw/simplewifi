@@ -18,7 +18,45 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)"/>
+	  <None Remove="ProfileXML\OPEN.xml" />
+	  <None Remove="ProfileXML\WEP.xml" />
+	  <None Remove="ProfileXML\WPA-Enterprise-PEAP-MSCHAPv2.xml" />
+	  <None Remove="ProfileXML\WPA-Enterprise-TLS.xml" />
+	  <None Remove="ProfileXML\WPA-PSK.xml" />
+	  <None Remove="ProfileXML\WPA2-Enterprise-PEAP-MSCHAPv2.xml" />
+	  <None Remove="ProfileXML\WPA2-Enterprise-TLS.xml" />
+	  <None Remove="ProfileXML\WPA2-PSK.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="ProfileXML\OPEN.xml">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="ProfileXML\WEP.xml">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="ProfileXML\WPA-Enterprise-PEAP-MSCHAPv2.xml">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="ProfileXML\WPA-Enterprise-TLS.xml">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="ProfileXML\WPA-PSK.xml">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="ProfileXML\WPA2-Enterprise-PEAP-MSCHAPv2.xml">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="ProfileXML\WPA2-Enterprise-TLS.xml">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="ProfileXML\WPA2-PSK.xml">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
 	</ItemGroup>
 
 </Project>
